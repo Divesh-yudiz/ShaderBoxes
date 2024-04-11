@@ -359,13 +359,13 @@ export default class Three {
   }
 
   onResize() {
-    // device.width = window.innerWidth;
-    // device.height = window.innerHeight;
+    device.width = window.innerWidth;
+    device.height = window.innerHeight;
 
-    // this.camera.aspect = device.width / device.height;
-    // this.camera.updateProjectionMatrix();
+    this.camera.aspect = device.width / device.height;
+    this.camera.updateProjectionMatrix();
 
-    // this.renderer.setSize(device.width, device.height);
-    // this.renderer.setPixelRatio(Math.min(device.pixelRatio, 2));
+    this.renderer.setSize(device.width, device.height);
+    this.renderer.setPixelRatio(Math.min(device.pixelRatio, 2));
   }
 }

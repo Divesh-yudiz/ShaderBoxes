@@ -15,10 +15,26 @@
       padding: 0;
       overflow: hidden;
     }
+
+    .scroll-text {
+      /* text-align: center; */
+      background: transparent;
+      position: absolute;
+      color: white;
+      top: 20px;
+      font-size: 20px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      padding: 0;
+      margin: 0;
+    }
   </style>
 </head>
 
 <body>
+
+  <div class="scroll-text">Scroll the page</div>
+
   <canvas id="canvas" class="z-[0] h-full w-full"></canvas>
   <script type="module" src="src/js/index.js"></script>
 </body>
